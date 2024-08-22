@@ -31,8 +31,8 @@
 
 :root{
   --bg-colour: #ffffff;
-  --primary-colour: #e026a8;
-  --secondary-colour: #21afb4;
+  --primary-colour: #e046ad;
+  --secondary-colour: #2db9ac;
   --transition: 0.5s;
   --border-radius: 15px;
   --bold-font: 550;
@@ -45,7 +45,12 @@
 }
 
 html {
+  background: linear-gradient(45deg, #2db9ac 10%,transparent 10%,transparent 90%,#2db9ac 90%),linear-gradient(135deg, transparent 40%, #2db9ac80 40%, #2db9ac80 60%, transparent 0),linear-gradient(45deg, transparent 40%, #2db9ac 40%, #2db9ac 60%, transparent 0);
+  background-size: 3em 3em;
+  background-color: #ffffff;
+  opacity: 1;
   scroll-behavior: smooth;
+  
 }
 
 .content {
@@ -54,9 +59,6 @@ html {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
-  /*TEMP REMOVE WHEN READY 
-  border: 1px solid #e026a8;
-  border-radius: var(--border-radius);*/
 }
 
 .hero {
@@ -97,7 +99,6 @@ html {
   height: 20px;
   width: 20px;
   display: block;
-  /* Other styles here */
 }
 
 .burger{
@@ -115,7 +116,7 @@ html {
   text-align: center;
 }
 
-/* ==========CONTACT FORM==========*/
+/* CONTACT FORM */
 .contact {
   margin: 2rem;
 }
@@ -224,9 +225,10 @@ nav a {
   transition: 0s;
 }
 
-nav a:hover {
+.navbar .navigation li :hover {
   color: var(--secondary-colour);
   border-bottom: 2px solid var(--primary-colour);
+
 }
 
 nav ul {
@@ -234,24 +236,48 @@ nav ul {
   gap: 1rem;
 }
 
-nav h1 { /*class?*/
+.navbar .header-link { /*class?*/
   font-family: var(--main-font), sans-serif;
   font-style: italic;
   font-weight: 200;
   color: var(--secondary-colour);
 }
 
+.navbar h1 :hover {
+  border-bottom: 2px solid var(--primary-colour);
+}
+
 nav h1 a{
   color: var(--secondary-colour);
 }
 
-nav h1 a:hover{
-  color: var(--primary-colour);
-  border-bottom: 1px solid var(--secondary-colour);
+.toggle-button{
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 31px;
+  height: 21px;
 }
 
-h2 {
-  font-weight: var(--bold-font);
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--primary-colour);
+  border-radius: 10px;
+}
+
+
+@media (max-width: 700px){
+  .toggle-button {
+    display: flex;
+  }
+  
+  nav ul {
+    display: none;
+  }
 }
 
 /* BODY */

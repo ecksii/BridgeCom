@@ -22,5 +22,68 @@
         <title>BridgeCom 2024</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     </head>
+    <body>
+       <script id="replace_with_navbar" src="assets/js/nav.js"></script>
+
+        <div class="content">
+            <section class="contact" id="contact">
+                <h2>Intrested?</h2>
+                <p class = 'contact-message'> This site is currently under construction, and tickets
+                    are not available at this time.
+                    <br><br>
+                    However if you are considering attending please leave your information and any notes
+                    below so we can guage interest. 
+                    <br><br>
+                    Hope to see you there!
+                </p>
+                <div class="contact-container">
+                    <form action="https://formspree.io/f/mwperzna" method="POST">
+                        <div class="form-control">
+                            <label for="name">Your Name:</label>
+                                <input 
+                                    type="name" 
+                                    id="name"
+                                    name="sender-name"
+                                    placeholder="name goes here"
+                                    class="input-field"
+                                    required
+                                />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Your email:</label>
+                                <input 
+                                    type="email" 
+                                    id="email"
+                                    name="sender-email"
+                                    placeholder="email goes here"
+                                    class="input-field"
+                                    required
+                                />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Your Message:</label>
+                                <textarea
+                                id="message"
+                                cols="60"
+                                rows="1"
+                                placeholder="type your message here"
+                                name="message"
+                                class="input-field"
+                                required
+                                ></textarea>
+                        </div>
+                            <input 
+                                type="submit" 
+                                id="submit-button"
+                                class="submit-button"
+                                value="Submit"
+                            />
+                    </form>
+                </div>
+            </section>
+        </div>
+    </body>
 </html>
