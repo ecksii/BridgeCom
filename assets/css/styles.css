@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323:ital,wght@0,400;0,900;1,700&display=swap");
+
+@font-face {
+  font-family: 'PixelCowboy';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PixelCowboy'), url('../fonts/PixelCowboy.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HelloVetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('HelloVetica'), url('../fonts/hellovetica.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'PixelSix';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PixelSix'), url('../fonts/pixelsix00.ttf') format('truetype');
+}
+
+.cabin-font {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+  "wdth" 100;
+}
+
+:root{
+  --bg-colour: #ffffff;
+  --primary-colour: #e026a8;
+  --secondary-colour: #21afb4;
+  --transition: 0.5s;
+  --border-radius: 15px;
+  --bold-font: 550;
+  --main-font: 'Cabin', sans-serif;
+}
+
+::placeholder {
+  font-family: var(--main-font);
+  padding-left: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  /*TEMP REMOVE WHEN READY 
+  border: 1px solid #e026a8;
+  border-radius: var(--border-radius);*/
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  margin: 2rem;
+}
+
+.hero h2 {
+  font-weight: 550;
+}
+
+.hero img{
+  height: 10rem;
+  border-radius: var(--border-radius);
+}
+
+.intro {
+  width:  25rem;
+  padding: 0.6rem;
+  border-radius: var(--border-radius);
+  color: var(--secondary-colour);
+  /*box-shadow: 0px 2px 15px 2px var(--secondary-colour);*/
+}
+.intro h1 {
+  margin-bottom: 0.1rem;
+}
+
+.intro p {
+  padding: 0.3rem 0;
+}
+
+.burger .icon {
+  background: url('../images/borg.png')no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+  display: block;
+  /* Other styles here */
+}
+
+.burger{
+  color: var(--primary-color);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+/*  INTRODUCTION  */
+
+.introduction h1{
+  text-align: center;
+}
+
+/* ==========CONTACT FORM==========*/
+.contact {
+  margin: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--secondary-colour);
+}
+
+.contact-container label {
+  line-height: 2.7em;
+  color: var(--secondary-colour);
+}
+
+.contact-container textarea {
+  min-height: 6rem;
+  font-size: 14px;
+  font-family: var(--main-font);
+  padding: 0.5rem;
+  resize: vertical;
+}
+
+.contact-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-colour);
+  font-size: 0.875rem;
+  outline: none;
+  font-family: var(--main-font);
+  color: rgb(0, 0, 0);
+  padding: 0.5rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--primary-colour);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+  font-family: var(--main-font);
+  color: var(--secondary-colour);
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  transition: var(--transition);
+  border: 2px solid var(--secondary-colour);
+  color: var(--primary-colour);
+}
+
+.contact-message {
+  font-size: 1.1rem;
+  text-align: center;
+}
+/*===============================*/ 
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--bg-colour);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* NAV BAR */
+
+.navbar {
+/*position: sticky;   /*issues with z index*/
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 20%;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+nav a {
+  color: var(--primary-colour);
+  transition: 0s;
+}
+
+nav a:hover {
+  color: var(--secondary-colour);
+  border-bottom: 2px solid var(--primary-colour);
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav h1 { /*class?*/
+  font-family: var(--main-font), sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: var(--secondary-colour);
+}
+
+nav h1 a{
+  color: var(--secondary-colour);
+}
+
+nav h1 a:hover{
+  color: var(--primary-colour);
+  border-bottom: 1px solid var(--secondary-colour);
+}
+
+h2 {
+  font-weight: var(--bold-font);
+}
+
+/* BODY */
+body {
+  font-family: var(--main-font);
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  color: var(--primary-colour);
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown :hover{
+  color: var(--secondary-colour);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fff7fd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}

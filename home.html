@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <!-- Animate CSS CDN -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+        <title>BridgeCom 2024</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1><a href="home.html" class="header-link">BridgeCom</a></h1>
+            <ul class="navigation">
+                <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                <li><a href="tickets.html" class="nav-link">Tickets</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn"> About
+                    </button>
+                    <div class="dropdown-content">
+                        <a class="dropdown-links" href="principles.html">Core Principles</a>
+                        <a class="dropdown-links" href="conduct.html">Code of Conduct</a>
+                        <a class="dropdown-links" href="policies.html">Policies</a>
+                        <a class="dropdown-links" href="team.html">Our Team</a>
+                        <a class="dropdown-links" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </ul>
+            <button class="burger">
+                <span class="icon"></span>
+            </button>
+        </nav>
+
+        <div class="content">
+            <section class="hero" id="about">
+                <div class="first-set animate__animated animate__pulse">
+                    <img
+                        src="assets/images/bridgecom logo.png"
+                        alt="BridgeCom Logo"
+                        loading="lazy"
+                        class="hero-img"
+                    />
+                </div>
+                <div class="intro">
+                    <h2>A Regional Burn in Cambridge, UK</h2>
+                    <br>
+                </div>
+            </section>
+        </div>
+
+        <br>
+        <div class="content">
+            <section class="introduction">
+                <h1>
+                    Join us on the 28th to 29th of September for a burners Teddy Bear's Picnic!
+                </h1>
+            
+
+            </section>
+        </div>
+        <div class="content">
+            <section class="contact" id="contact">
+                <h2>Intrested?</h2>
+                <p class = 'contact-message'> This site is currently under construction, and tickets
+                    are not available at this time.
+                    <br><br>
+                    However if you are considering attending please leave your information and any notes
+                    below so we can guage interest. 
+                    <br><br>
+                    Hope to see you there!
+                </p>
+                <div class="contact-container">
+                    <form action="https://formspree.io/f/mwperzna" method="POST">
+                        <div class="form-control">
+                            <label for="name">Your Name:</label>
+                                <input 
+                                    type="name" 
+                                    id="name"
+                                    name="sender-name"
+                                    placeholder="name goes here"
+                                    class="input-field"
+                                    required
+                                />
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Your email:</label>
+                                <input 
+                                    type="email" 
+                                    id="email"
+                                    name="sender-email"
+                                    placeholder="email goes here"
+                                    class="input-field"
+                                    required
+                                />
+                        </div>
+                        <div class="form-control">
+                            <label for="message">Your Message:</label>
+                                <textarea
+                                id="message"
+                                cols="60"
+                                rows="1"
+                                placeholder="type your message here"
+                                name="message"
+                                class="input-field"
+                                required
+                                ></textarea>
+                        </div>
+                            <input 
+                                type="submit" 
+                                id="submit-button"
+                                class="submit-button"
+                                value="Submit"
+                            />
+                    </form>
+                </div>
+            </section>
+        </div>
+        <script src="assets/js/app.js" async defer></script>
+
+        <!-- Ion icons scripts -->
+        <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
