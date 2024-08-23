@@ -232,7 +232,6 @@ nav a {
 }
 
 nav ul {
-  display: flex;
   gap: 1rem;
 }
 
@@ -253,8 +252,8 @@ nav h1 a{
 
 .toggle-button{
   position: absolute;
-  top: 0.75rem;
-  right: 1rem;
+  top: 1.75rem;
+  right: 5rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -269,22 +268,41 @@ nav h1 a{
   border-radius: 10px;
 }
 
+/* Keeps Nav Bar items spaced */
+.navbar .navigation ul{
+  display: flex;
+}
 
 @media (max-width: 700px){
   .toggle-button {
     display: flex;
   }
-  
-  nav ul {
+   
+  .navigation {
+    width: 100%;
     display: none;
   }
-}
 
-/* BODY */
-body {
-  font-family: var(--main-font);
-}
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
+  .navbar ul li {
+    text-align: center;
+  }
+  
+  .dropdown {
+    align-self: center;
+  }
+  .hidden{
+    display: flex;
+  }
+}
 
 .dropdown {
   float: left;
@@ -334,3 +352,9 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* BODY */
+body {
+  font-family: var(--main-font);
+}
+
