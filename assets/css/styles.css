@@ -75,7 +75,7 @@ html {
 }
 
 .hero img{
-  height: 10rem;
+  height: 8rem;
   border-radius: var(--border-radius);
 }
 
@@ -215,7 +215,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 20%;
+  padding: 1rem 20%;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -283,11 +283,13 @@ nav h1 a{
   .navigation {
     width: 100%;
     display: none;
+    padding-top: 1rem;
   }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem 10%;
   }
   .navbar ul {
     flex-direction: column;
@@ -305,7 +307,17 @@ nav h1 a{
   .hidden{
     display: flex;
   }
+  .hero{
+    flex-direction: column;
+  }
+  .intro{
+    width: 22rem;
+  }
+  .content{
+    width: 90%;
+  }
 }
+
 
 .dropdown {
   float: left;
