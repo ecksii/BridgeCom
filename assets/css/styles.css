@@ -94,6 +94,14 @@ html {
   padding: 0.3rem 0;
 }
 
+.content h2 {
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: var(--border-radius);
+  color: var(--primary-colour);
+
+}
+
 .burger .icon {
   background: url('../images/borg.png')no-repeat;
   background-size: contain;
@@ -285,6 +293,10 @@ nav h1 a{
     display: none;
     padding-top: 1rem;
   }
+  
+  .hero h2 {
+    text-align: center;
+  }
 
   .navbar {
     flex-direction: column;
@@ -318,6 +330,19 @@ nav h1 a{
   }
 }
 
+#principles {
+  padding: 0.1rem;
+}
+
+#principles img {
+  scale: 50%;
+  float: left;
+}
+
+#principles h2 {
+  /*float: right;*/
+  display: flex;
+}
 
 .dropdown {
   float: left;
@@ -371,5 +396,42 @@ nav h1 a{
 /* BODY */
 body {
   font-family: var(--main-font);
+}
+
+#events p{
+  padding-top: 1rem;
+}
+
+#events h1{
+  display: flex;
+  color: #2db9ac;
+}
+
+.faq {
+  padding-bottom: 7rem;
+}
+.faq li {
+  display: flex;
+  flex-direction: column;
+}
+.faq li p{
+  float: right;
+}
+
+.faq li #Q {
+  font-size: 5rem;
+  color: var(--primary-colour);
+  float: left;
+}
+
+.faq li #A {
+  font-size: 5rem;
+  color: var(--secondary-colour);
+  float: left;
+}
+
+.faq li #Atext {
+
+  padding-bottom: 5rem;
 }
 
