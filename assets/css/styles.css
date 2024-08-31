@@ -31,7 +31,7 @@
 
 :root{
   --bg-colour: #ffffff;
-  --primary-colour: #e046ad;
+  --primary-colour: #eb55b9;
   --secondary-colour: #2db9ac;
   --selected-bg-colour: #f9f9f9;
   --transition: 0.2s;
@@ -332,16 +332,27 @@ nav h1 a{
 
 #principles {
   padding: 0.1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 #principles img {
-  scale: 50%;
+  scale: 20%;
   float: left;
 }
 
+#principles li {
+  display: inline;
+}
+
 #principles h2 {
-  /*float: right;*/
-  display: flex;
+  font-style: italic;
+}
+
+#principlesintro {
+  text-align: center;
+  color: var(--secondary-colour)
+
 }
 
 .dropdown {
@@ -444,6 +455,68 @@ body {
 
 .eventslist li{
   margin-left: 2rem;
+}
+
+/* PARTICIPATION */
+
+#participation h1 {
+  color: var(--primary-colour);
+  text-align: center;
+  padding: 1rem;
+}
+
+#participation h2 {
+  color: var(--secondary-colour);
+}
+
+#participation h3 {
+  color: var(--primary-colour);
+  padding-bottom: 1rem;
+}
+
+#participation ul {
+  list-style-type: disc;
+}
+
+#participation li {
+  margin-left: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* TICKETS */
+
+#tix {
+  text-align: center;
+  color: var(--primary-colour);
+}
+
+#tix img {
+  align-self: center;
+  margin-top: 5rem;
+}
+
+#tix h1 {
+  margin-top: 2rem;
+}
+
+.contactbtn {
+  font-size: 2rem;
+  border: none;
+  color: var(--primary-colour);
+  background-color: white;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  outline: solid;
+  outline-color: var(--secondary-colour);
+  margin-top: 2rem;
+  transition: 0.5s;
+}
+
+.contactbtn:hover {
+  background-color:var(--secondary-colour);
+  color: white;
 }
 
 
