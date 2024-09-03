@@ -435,6 +435,7 @@ body {
   font-size: 5rem;
   color: var(--primary-colour);
   float: left;
+  display: inline;
 }
 
 .faq li #A {
@@ -445,6 +446,11 @@ body {
 
 .faq li #Atext {
   padding-bottom: 5rem;
+}
+
+.faq li #Qtext {
+  display: block;
+  float: right;
 }
 
 /* EVENTS */
@@ -493,6 +499,8 @@ body {
 #tix img {
   align-self: center;
   margin-top: 5rem;
+  height: auto;
+  width: 100%;
 }
 
 #tix h1 {
