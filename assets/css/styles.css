@@ -75,7 +75,7 @@ html {
 }
 
 .hero img{
-  height: 8rem;
+  height: 20rem;
   border-radius: var(--border-radius);
 }
 
