@@ -34,6 +34,7 @@
   --primary-colour: #eb55b9;
   --secondary-colour: #2db9ac;
   --selected-bg-colour: #f9f9f9;
+  --darker-colour: #5f1c49;
   --transition: 0.2s;
   --border-radius: 15px;
   --bold-font: 550;
@@ -60,6 +61,7 @@ html {
   margin-top: 15px;
   margin-bottom: 15px;
   padding: 10px;
+  line-height: 1.2;
 }
 
 .hero {
@@ -94,12 +96,15 @@ html {
   padding: 0.3rem 0;
 }
 
+.content h1 {
+  color: var(--darker-colour);
+}
+
 .content h2 {
   padding: 1rem 0;
   text-align: center;
   border-radius: var(--border-radius);
   color: var(--primary-colour);
-
 }
 
 .burger .icon {
@@ -283,7 +288,6 @@ nav h1 a{
 }
 
 @media (max-width: 1000px){
-
   .toggle-button {
     display: flex;
   }
@@ -409,14 +413,7 @@ body {
   font-family: var(--main-font);
 }
 
-#events p{
-  padding-top: 1rem;
-}
 
-#events h1{
-  display: flex;
-  color: #2db9ac;
-}
 
 /* FAQ */
 
@@ -463,6 +460,14 @@ body {
   margin-left: 2rem;
 }
 
+#events p{
+  padding-top: 1rem;
+}
+
+#events h1{
+  display: flex;
+  color: #2db9ac;
+}
 /* PARTICIPATION */
 
 #participation h1 {
@@ -507,6 +512,14 @@ body {
   margin-top: 2rem;
 }
 
+#signupbtn{
+  text-align: center;
+  width: 100%;
+  border-radius: 2px;
+  margin-top: 0px;
+  padding: 0px;
+}
+
 .contactbtn {
   font-size: 2rem;
   border: none;
@@ -519,7 +532,9 @@ body {
   outline: solid;
   outline-color: var(--secondary-colour);
   margin-top: 2rem;
+  margin-bottom: 2rem;
   transition: 0.5s;
+  border-radius: 2px;
 }
 
 .contactbtn:hover {
@@ -527,4 +542,42 @@ body {
   color: white;
 }
 
+.contactbtndiv {
+  text-align: center;
+}
 
+#ff-submit-root{
+  color: var(--primary-colour);
+}
+
+#gform {
+  width: 100%;
+  height: 1828px;
+  text-align: center;
+}
+
+
+/* NEW BURNERS */
+
+#newbies h1 {
+  color: var(--primary-colour);
+}
+
+#newbies h2 {
+  text-align: justify;
+  color: var(--darker-colour);
+  font-style: italic;
+}
+
+#newbies h3 {
+  line-height: 1.5;
+}
+
+#newbies p1 {
+  line-height: 1.5;
+  font-style: italic;
+}
+
+#newbies p3 {
+  font-size: 1.1rem;
+}
