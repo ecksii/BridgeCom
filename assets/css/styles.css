@@ -474,7 +474,7 @@ nav h1 a{
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: var(--darker-colour);
+  color: rgb(151, 0, 131);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -512,11 +512,38 @@ body {
   float: right;
 }
 
+.faqlist h3 {
+  color: var(--primary-colour);
+}
+
+.faqlist a {
+}
+
 .faqlist ul {
   padding-left: 1rem;
 }
 
+#wishlist {
+  font-size: 2rem;
+  font-family: var(--bolder-font);
+  color: var(--primary-colour);
+  border-radius: 2px;
+  border-style: solid;
+  border-color: var(--secondary-colour);
+  border-radius: 5px;
+  width: fit-content;
+  margin: 2rem;
+  padding: 0rem;
+  text-align: inherit;
+  transition: var(--transition);
+}
+
+#wishlist:hover{
+  color: var(--secondary-colour);
+}
+
 #Q {
+  font-family: var(--bolder-font);
   font-size: 5rem;
   color: var(--primary-colour);
   float: left;
@@ -524,6 +551,7 @@ body {
 }
 
 #A {
+  font-family: var(--bolder-font);
   font-size: 5rem;
   color: var(--secondary-colour);
   float: left;
@@ -606,8 +634,20 @@ body {
 }
 
 #tix h1 {
+  font-weight: var(--bold-font);
   font-family: var(--bolder-font);
-  color: var(--darker-colour);
+  text-align: center;
+}
+
+#tix h2 {
+
+  text-align: center;
+}
+
+#tix p {
+  color: var(--secondary-colour);
+  font-weight: var(--bold-font);
+  font-size: 1.2rem;
 }
 
 #signupbtn{
