@@ -73,6 +73,9 @@ html {
 }
 #page_header {
   font-size: 2.5rem;
+  font-family: var(--bolder-font);
+  color: var(--primary-colour);
+  text-align: left;
 }
 .hero {
   display: flex;
@@ -375,7 +378,7 @@ nav h1 a{
 
 #principles h2 {
   font-style: italic;
-  text-align: justify;
+  text-align: left;
   font-family: var(--bolder-font);
 }
 
@@ -389,7 +392,7 @@ nav h1 a{
 }
 
 #principlesintro {
-  text-align: justify;
+  text-align: left;
 }
 #principlesintro h1 {
   font-family: var(--bolder-font);
@@ -398,7 +401,7 @@ nav h1 a{
 #principlesintro h2 {
   color: var(--darker-colour);
   font-style: italic;
-  text-align: justify;
+  text-align: left;
 }
 
 /* CODE OF CONDUCT */
@@ -409,18 +412,18 @@ nav h1 a{
 }
 
 #conduct_intro h2 {
-  text-align: justify;
+  text-align: left;
   color: var(--darker-colour);
   font-style: italic;
 }
 
 #conduct_intro h3 {
-  text-align: justify;
+  text-align: left;
   font-family: var(--bolder-font);
 }
 
 #conduct_body h2 {
-  text-align: justify;
+  text-align: left;
   color: var(--primary-colour);
   font-style: italic;
   font-family: var(--bolder-font);
@@ -536,11 +539,14 @@ body {
 /* EVENTS */
 
 .eventslist {
-  list-style-type: disc;
+  text-align: center;
 }
 
 .eventslist li{
   margin-left: 2rem;
+  color: var(--secondary-colour);
+  font-style: italic;
+  font-size: 1.5rem;
 }
 
 #events p{
@@ -549,18 +555,22 @@ body {
 
 #events h1{
   display: flex;
-  color: #2db9ac;
+  color: var(--primary-colour);
+  font-family: var(--bolder-font);
+}
+
+#events h2 {
+  text-align: left;
+  color: var(--darker-colour);
 }
 /* PARTICIPATION */
 
 #participation h1 {
-  color: var(--primary-colour);
-  text-align: center;
-  padding: 1rem;
+  padding-bottom: 1rem;
 }
-
 #participation h2 {
   color: var(--secondary-colour);
+  text-align: left;
 }
 
 #participation h3 {
@@ -592,7 +602,7 @@ body {
 }
 
 #tix h1 {
-  margin-top: 2rem;
+  font-family: var(--bolder-font);
 }
 
 #signupbtn{
@@ -650,7 +660,7 @@ body {
 }
 
 #newbies h2 {
-  text-align: justify;
+  text-align: left;
   color: var(--darker-colour);
   font-style: italic;
 }
