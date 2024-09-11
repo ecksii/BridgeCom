@@ -221,7 +221,6 @@ html {
 }
 
 ul {
-  list-style-type: none;
 }
 
 a {
@@ -262,6 +261,7 @@ nav a {
 
 nav ul {
   gap: 1rem;
+  list-style-type: none;
 }
 
 .navbar .header-link { /*class?*/
@@ -506,32 +506,37 @@ body {
 .faq {
   padding-bottom: 7rem;
 }
-.faq li {
+
+.faqlist {
   display: flex;
   flex-direction: column;
 }
-.faq li p{
+.faq .faqlist p{
   float: right;
 }
 
-.faq li #Q {
+.faqlist ul {
+  padding-left: 1rem;
+}
+
+#Q {
   font-size: 5rem;
   color: var(--primary-colour);
   float: left;
   display: inline;
 }
 
-.faq li #A {
+#A {
   font-size: 5rem;
   color: var(--secondary-colour);
   float: left;
 }
 
-.faq li #Atext {
+#Atext {
   padding-bottom: 5rem;
 }
 
-.faq li #Qtext {
+#Qtext {
   display: block;
   float: right;
 }
@@ -540,6 +545,7 @@ body {
 
 .eventslist {
   text-align: center;
+  list-style-type: none;
 }
 
 .eventslist li{
@@ -548,6 +554,7 @@ body {
   font-style: italic;
   font-size: 1.5rem;
 }
+
 
 #events p{
   padding-top: 1rem;
@@ -603,6 +610,7 @@ body {
 
 #tix h1 {
   font-family: var(--bolder-font);
+  color: var(--darker-colour);
 }
 
 #signupbtn{
