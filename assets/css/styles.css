@@ -94,7 +94,7 @@ html {
   padding: 0.6rem;
   border-radius: var(--border-radius);
   color: var(--secondary-colour);
-  /*box-shadow: 0px 2px 15px 2px var(--secondary-colour);*/
+  font-family: var(--bolder-font);
 }
 .intro h1 {
   margin-bottom: 0.1rem;
@@ -145,6 +145,7 @@ html {
 
 .contact h2 {
   text-align: center;
+  font-family: var(--bolder-font);
   margin-bottom: 1rem;
   color: var(--secondary-colour);
 }
@@ -241,6 +242,7 @@ a:hover {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   font-size: 24px;
+  font-family: var(--bolder-font);
 }
 
 nav a {
@@ -295,6 +297,12 @@ nav h1 a{
   display: flex;
 }
 
+@media (min-width: 1500px){
+  .content{
+    width: 50%;
+  }
+
+}
 @media (max-width: 1000px){
   .toggle-button {
     display: flex;
@@ -342,6 +350,8 @@ nav h1 a{
   }
 }
 
+/*PRINCIPLES*/
+
 #principles {
   padding: 0.1rem;
   display: flex;
@@ -353,18 +363,40 @@ nav h1 a{
   float: left;
 }
 
+#principles ul {
+  margin-bottom: 4rem;
+}
+
 #principles li {
   display: inline;
 }
 
 #principles h2 {
   font-style: italic;
+  text-align: justify;
+  font-family: var(--bolder-font);
+}
+
+#principles h3 {
+  padding-left: 2rem;
+  font-size: 1.2rem;
+  color: var(--secondary-colour);
+}
+#principles p3 {
+  padding-left: 2rem;
 }
 
 #principlesintro {
-  text-align: center;
-  color: var(--secondary-colour)
-
+  text-align: justify;
+}
+#principlesintro h1 {
+  font-family: var(--bolder-font);
+  color: var(--primary-colour);
+}
+#principlesintro h2 {
+  color: var(--secondary-colour);
+  font-style: italic;
+  text-align: justify;
 }
 
 .dropdown {
@@ -399,7 +431,7 @@ nav h1 a{
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
-  color: black;
+  color: var(--darker-colour);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -571,6 +603,7 @@ body {
 
 #newbies h1 {
   color: var(--primary-colour);
+  font-family: var(--bolder-font)
 }
 
 #newbies h2 {
@@ -590,4 +623,30 @@ body {
 
 #newbies p3 {
   font-size: 1.1rem;
+}
+
+
+/* CODE OF CONDUCT */
+
+#conduct_intro h1 {
+  color: var(--primary-colour);
+  font-family: var(--bolder-font);
+}
+
+#conduct_intro h2 {
+  text-align: justify;
+  color: var(--darker-colour);
+  font-style: italic;
+}
+
+#conduct_intro h3 {
+  text-align: justify;
+  font-family: var(--bolder-font);
+}
+
+#conduct_body h2 {
+  text-align: justify;
+  color: var(--secondary-colour);
+  font-style: italic;
+  font-family: var(--bolder-font);
 }
