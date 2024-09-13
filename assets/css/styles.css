@@ -714,13 +714,61 @@ body {
   line-height: 1.5;
 }
 
-#newbies p1 {
-  line-height: 1.5;
+#newbies h4 {
+  font-family: var(--bolder-font);
+  color: var(--primary-colour);
+  font-size: 2rem;
   font-style: italic;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+
+}
+
+#newbies p1 {
+  line-height: 1.6;
+  font-style: italic;
+}
+
+#newbies p2 {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#newbies li {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+#newbies a {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--secondary-colour);
+  display: inline-block;
+  font-family: var(--bolder-font);
+}
+
+#newbies a:hover {
+  color: var(--primary-colour);
+}
+
+#newbies .indent {
+  margin-left: 1rem;
 }
 
 #newbies p3 {
   font-size: 1.1rem;
+}
+#newbies .indent p3 {
+  font-family: var(--bolder-font);
+  font-size: 1.4rem;
+  color: var(--secondary-colour);
+  font-style: italic;
+}
+
+#newbies #page_intro {
+  color: var(--secondary-colour);
+  font-style: normal;
 }
 
 
